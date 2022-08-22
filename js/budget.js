@@ -29,6 +29,7 @@ document.getElementById('calculate-btn').addEventListener('click',function(){
         alert('provide a valid number');
         return true;
     }
+
     const playerExpensesAmount = 5 * perPlayerExpenses;
     setTextFieldValueById('player-expenses',playerExpensesAmount);
     
