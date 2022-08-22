@@ -1,6 +1,7 @@
 header{
     background-color: rgb(15, 14, 14);
     height: 500px;
+    display:none;
 }
 main{
     background-color: rgb(42, 41, 41);
