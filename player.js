@@ -17,22 +17,32 @@ function setTextFieldValueById (textFieldId, newValue){
     const textField = document.getElementById(textFieldId);
     textField.innerText = newValue; 
 }
+
 document.getElementById('calculate-btn').addEventListener('click',function(){
+   
     const perPlayerExpenses = getInputFieldValueById('per-player-expenses');
-    const playerExpensesText = getTextFieldValueById('player-expenses');
+    if(isNaN(perPlayerExpenses) || perPlayerExpenses===""|| perPlayerExpenses<0){
+        alert('provide a valid number');
+        return true;
+    }
     const playerExpensesAmount = 5 * perPlayerExpenses;
     setTextFieldValueById('player-expenses',playerExpensesAmount);
+    
 });
 
 document.getElementById('calculate-total-btn').addEventListener('click',function(){
-     const perPlayerExpenses = getInputFieldValueById('per-player-expenses');
-    const playerExpensesText = getTextFieldValueById('player-expenses');
-    const playerExpensesAmount = 5 * perPlayerExpenses;
-     setTextFieldValueById('player-expenses',playerExpensesAmount);
+    const playerExpenses = getTextFieldValueById('player-expenses')
     const managerExpense = getInputFieldValueById('manager-expense');
+    if(isNaN(managerExpense) || managerExpense==="" || managerExpense<0){
+        alert('provide a valid number pls');
+        return true;
+    }
     const coachExpense = getInputFieldValueById('coach-expense');
-    const managerCoachExpenses = managerExpense + coachExpense;
-    const totalExpensesAmount = managerCoachExpenses + playerExpensesText;
-    setTextFieldValueById('total-expenses',totalExpensesAmount);
+     if(isNaN(coachExpense) || coachExpense===""||coachExpense<0){
+        alert('input a valid number');
+        return true;
+    }
+    const totalExpenses =  playerExpenses +managerExpense +coachExpense;
+    setTextFieldValueById('total-expenses',totalExpenses);
 
 })
