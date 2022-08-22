@@ -6,11 +6,15 @@
     <title>Choose Your Favourite Players</title>
     <!-- bootstrap link -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <!-- font awesome -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oleo+Script&family=Poppins:wght@500&family=Roboto&family=Roboto+Condensed&display=swap" rel="stylesheet">
     <!-- css link -->
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
-  <header class="">
+  <header>
     <div class="text-center text-white m-auto">
       <div class="row row-cols-3">
         <div class="col-3">
@@ -20,7 +24,7 @@
          <div class="text-center text-white">
         <h1 class="fw-bold text-danger">Choose Your Favourite Players</h1>
         <p class="mx-auto w-75">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem nobis in molestiae facere incidunt. Ducimus  dolorem earum corrupti est nisi maiores deserunt ratione. facere incidunt Ducimus  dolorem earum</p>
-    </div> 
+       </div> 
         </div>
         <div class="col-3">
           <img class="top-img" src="https://www.shape.com/thmb/ZK_CFTUvMgXzKxadvWJmzQQvXPQ=/400x0/filters:no_upscale():max_bytes(150000):strip_icc()/gettyimages-902361588-dd7475d574654616b984e2cb4b5eba0f.jpg">
@@ -29,9 +33,9 @@
       </div>
     </div>
 
-  
   </header>
-    <main class="">
+
+    <main>
         <section class="container">
             <div class="d-flex">
                 <div class="m-2 mt-5">
@@ -40,8 +44,7 @@
                         <img src="https://cdn.britannica.com/34/212134-050-A7289400/Lionel-Messi-2018.jpg?w=400&h=300&c=crop" class="card-img-top" alt="...">
                         <div class="card-body text-center">
                           <h5 class="card-title">Lionel Messi</h5>
-                          <p class="card-text">hfkkgk</p>
-                          <!-- <a href="#" class="btn btn-primary w-75 select-btn">SELECT</a> -->
+                          <p class="card-text">170 goals</p>
                           <button class="btn btn-primary w-75 select-btn" onclick="addPlayers(this)">SELECT</button>
                         </div>
                     </div>
@@ -52,9 +55,8 @@
                         <img src="https://icdn.caughtoffside.com/wp-content/uploads/2021/10/paris-saint-germain-v-manchester.jpg" class="card-img-top" alt="...">
                         <div class="card-body text-center">
                           <h5 class="card-title">Neymar Jr</h5>
-                          <p class="card-text">Some quick .</p>
-                          <!-- <a href="#" class="btn btn-primary w-75 select-btn" onclick="displayPlayers(this)">SELECT</a> -->
-                          <button class="btn btn-primary w-75 select-btn" onclick="addPlayers(this)">SELECT</button>
+                          <p class="card-text">170 goals</p>
+                         <button class="btn btn-primary w-75 select-btn" onclick="addPlayers(this)">SELECT</button>
                         </div>
                       </div>
                 </div>
@@ -64,14 +66,13 @@
                         <img src="https://a.espncdn.com/photo/2022/0307/r983133_1296x729_16-9.jpg" class="card-img-top" alt="...">
                         <div class="card-body text-center">
                           <h5 class="card-title">Kylian Mbappé</h5>
-                          <p class="card-text">Some quick.</p>
-                          <!-- <a href="#" class="btn btn-primary w-75 select-btn">SELECT</a> -->
-                          <button class="btn btn-primary w-75 select-btn" onclick="addPlayers(this)">SELECT</button>
+                          <p class="card-text">170 goals</p>
+                           <button class="btn btn-primary w-75 select-btn" onclick="addPlayers(this)">SELECT</button>
                         </div>
                       </div>
                 </div>
                 <div class="m-3 text-white bg-black mt-5 p-2" style="width: 16rem;">
-                    <h3 class="text-center mb-5">Favourite-5</h3>
+                    <h3 class="text-center mb-5">Favourite - <span id="favourites">0</span> </h3>
                     <div id="players" class="ps-3">
                   
                     </div>
@@ -84,8 +85,7 @@
                         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRj5W_2PKShOpQexVdbUH1SplOJMszXjH5dvA&usqp=CAU" class="card-img-top" alt="...">
                         <div class="card-body text-center">
                           <h5 class="card-title">Ronaldinho</h5>
-                          <p class="card-text">hfkkgk</p>
-                          <!-- <a href="#" class="btn btn-primary w-75 select-btn">SELECT</a> -->
+                          <p class="card-text">170 goals</p>
                           <button class="btn btn-primary w-75 select-btn" onclick="addPlayers(this)">SELECT</button>
                         </div>
                     </div>
@@ -96,8 +96,7 @@
                         <img src="https://bolavip.com/__export/1650475746644/sites/bolavip/img/2022/04/20/sergio_ramos_of_paris_saint-germain_during_a_french_ligue_1_match.jpg_242310155.jpg" class="card-img-top" alt="...">
                         <div class="card-body text-center">
                           <h5 class="card-title">Sergio Ramos</h5>
-                          <p class="card-text">Some quick .</p>
-                          <!-- <a href="#select-id" class="btn btn-primary w-75 select-btn">SELECT</a> -->
+                          <p class="card-text">170 goals</p>
                           <button class="btn btn-primary w-75 select-btn" onclick="addPlayers(this)">SELECT</button>
                         </div>
                       </div>
@@ -108,8 +107,7 @@
                         <img src="https://library.sportingnews.com/styles/crop_style_16_9_mobile_2x/s3/2022-08/rs.jpg?itok=gQKrRhCL" class="card-img-top" alt="...">
                         <div class="card-body text-center">
                           <h5 class="card-title">Renato Sanches</h5>
-                          <p class="card-text">Some quick.</p>
-                          <!-- <a href="#" class="btn btn-primary w-75 select-btn">SELECT</a> -->
+                          <p class="card-text">170 goals</p>
                           <button class="btn btn-primary w-75 select-btn" onclick="addPlayers(this)">SELECT</button>
                         </div>
                       </div>
@@ -118,11 +116,11 @@
                     <h3>Budget</h3>
                    <p>Per Player <input id="per-player-expenses" class="bg-black text-white" type="text"></p>
                     <a href="#" class="btn btn-primary calculate-btn mt-1 mb-2" id="calculate-btn">Calculate</a>
-                    <h6 class="my-3">Player Expenses:$<span id="player-expenses">0</span></h6>
+                    <h5 class="my-3">Player Expenses: $<span id="player-expenses">0</span></h5>
                     <p>Manager <input id="manager-expense" class="bg-black text-white" type="text"></p>
                     <p> Coach <input id="coach-expense" class="bg-black ms-3 text-white" type="text"></p>
                     <a href="#" class="btn btn-primary mt-1 mb-3 calculate-btn" id="calculate-total-btn">Calculate Total</a>
-                    <h6>Total: $<span id="total-expenses">0</span></h6>
+                    <h5>Total Expenses: $<span id="total-expenses">0</span></h5>
                 </div>
             </div>
             <div class="d-flex">
@@ -132,8 +130,7 @@
                         <img src="https://i2-prod.mirror.co.uk/incoming/article25333915.ece/ALTERNATES/s615/0_Paris-Saint-Germain-vs-LOSC-Lille-France-29-Oct-2021.jpg" class="card-img-top" alt="...">
                         <div class="card-body text-center">
                           <h5 class="card-title">Angel de Maria</h5>
-                          <p class="card-text">hfkkgk</p>
-                          <!-- <a href="#" class="btn btn-primary w-75 select-btn">SELECT</a> -->
+                          <p class="card-text">170 goals</p>
                           <button class="btn btn-primary w-75 select-btn" onclick="addPlayers(this)">SELECT</button>
                         </div>
                     </div>
@@ -144,8 +141,7 @@
                         <img src="https://www.aljazeera.com/wp-content/uploads/2021/09/gettyimages-467547042-594x594-1.jpg?resize=570%2C380" class="card-img-top" alt="...">
                         <div class="card-body text-center">
                           <h5 class="card-title">Pele</h5>
-                          <p class="card-text">Some quick .</p>
-                          <!-- <a href="#select-id" class="btn btn-primary w-75 select-btn">SELECT</a> -->
+                          <p class="card-text">170 goals</p>
                           <button class="btn btn-primary w-75 select-btn" onclick="addPlayers(this)">SELECT</button>
                         </div>
                       </div>
@@ -156,23 +152,20 @@
                         <img src="https://images.news18.com/ibnlive/uploads/2020/06/1592914826_zinedine-zidane.png" class="card-img-top" alt="...">
                         <div class="card-body text-center">
                           <h5 class="card-title">Zinedine Zidane</h5>
-                          <p class="card-text">Some quick.</p>
-                          <!-- <a href="#" class="btn btn-primary w-75 select-btn">SELECT</a> -->
+                          <p class="card-text">170 goals</p>
                           <button class="btn btn-primary w-75 select-btn" onclick="addPlayers(this)">SELECT</button>
                         </div>
                       </div>
-                </div>
-               
-            </div>
-            
-              
-        </section>
+                  </div>
+               </div>
+          </section>
         
     </main>
 
-
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+
     <script src="js/players.js"></script>
     <script src="js/budget.js"></script>
+
   </body>
 </html>

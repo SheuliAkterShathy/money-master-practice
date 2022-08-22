@@ -1,12 +1,7 @@
-// player section
-
-
-// budget section ends
 function getInputFieldValueById (inputFieldId){
     const inputField = document.getElementById(inputFieldId);
     const inputFieldValueString = inputField.value;
     const inputFieldValue = parseInt(inputFieldValueString);
-    inputField.value = '';
     return inputFieldValue;
 }
 
@@ -30,7 +25,7 @@ document.getElementById('calculate-btn').addEventListener('click',function(){
         return true;
     }
 
-    const playerExpensesAmount = 5 * perPlayerExpenses;
+    const playerExpensesAmount = playerArray.length * perPlayerExpenses;
     setTextFieldValueById('player-expenses',playerExpensesAmount);
     
 });

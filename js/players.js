@@ -5,10 +5,9 @@ function display(players){
              alert('players will not be more than 5');
            return;
 }
-div.innerHTML="";
+         div.innerHTML="";
    
    for(let i=0; i<players.length;i++){
-       
          const name = players[i];  
          const ul = document.createElement("ul");
          ul.innerHTML = `
@@ -18,11 +17,9 @@ div.innerHTML="";
       }
 }
 function addPlayers(element){
-   
-    
     const playerName = (element.parentNode.children[0].innerText);
     playerArray.push(playerName);
+    document.getElementById('favourites').innerText=playerArray.length;
     display(playerArray);
     element.disabled=true;
-    
 }
