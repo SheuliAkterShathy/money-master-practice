@@ -88,16 +88,15 @@
                         </div>
                       </div>
                 </div>
-                <div class=" text-white text-center mx-auto bg-black p-2" style="width: 18rem;">
+                <div class=" text-white text-center mx-auto bg-black p-2" style="width: 16rem;">
                     <h3>Budget</h3>
-                   <p> Per Player <input class="bg-black" type="text"></p>
-                    <a href="#" class="btn btn-primary calculate-btn mt-3">Calculate</a>
-                    <h6>Player Expenses:$<span>0</span></h6>
-                    <p>Per Player <input class="bg-black" type="text"></p>
-                    <p>Per Player <input class="bg-black" type="text"></p>
-                    <a href="#" class="btn btn-primary mt-3 calculate-btn ">Calculate</a>
-                    <h6>Player Expenses:$<span>0</span></h6>
-                    <h6>Total: $<span>0</span></h6>
+                   <p>Per Player <input id="per-player-expenses" class="bg-black text-white" type="text"></p>
+                    <a href="#" class="btn btn-primary calculate-btn mt-1 mb-2" id="calculate-btn">Calculate</a>
+                    <h6 class="my-3">Player Expenses:$<span id="player-expenses">0</span></h6>
+                    <p>Manager <input id="manager-expense" class="bg-black text-white" type="text"></p>
+                    <p> Coach <input id="coach-expense" class="bg-black ms-3 text-white" type="text"></p>
+                    <a href="#" class="btn btn-primary mt-1 mb-3 calculate-btn" id="calculate-total-btn">Calculate Total</a>
+                    <h6>Total: $<span id="total-expenses">0</span></h6>
                 </div>
             </div>
             
@@ -108,5 +107,6 @@
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+    <script src="player.js"></script>
   </body>
 </html>
