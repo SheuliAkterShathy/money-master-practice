@@ -1,3 +1,22 @@
-/* body{
-    background-color: black;
-} */
+header{
+    background-color: rgb(15, 14, 14);
+    height: 500px;
+}
+main{
+    background-color: rgb(42, 41, 41);
+}
+h1{
+    font-size: 50px;
+}
+
+.card img{
+    height: 180px;
+    object-fit: cover;
+
+}
+input{
+    width: 60%;
+}
+.calculate-btn {
+    width: 87%;
+}
