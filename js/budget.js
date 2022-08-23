@@ -17,17 +17,15 @@ function setTextFieldValueById (textFieldId, newValue){
     textField.innerText = newValue; 
 }
 
+
 document.getElementById('calculate-btn').addEventListener('click',function(){
-   
     const perPlayerExpenses = getInputFieldValueById('per-player-expenses');
-    if(isNaN(perPlayerExpenses) || perPlayerExpenses===""|| perPlayerExpenses<0){
+    if(isNaN(perPlayerExpenses) || perPlayerExpenses ==="" || perPlayerExpenses<0){
         alert('provide a valid number');
         return true;
     }
-
     const playerExpensesAmount = playerArray.length * perPlayerExpenses;
     setTextFieldValueById('player-expenses',playerExpensesAmount);
-    
 });
 
 document.getElementById('calculate-total-btn').addEventListener('click',function(){
@@ -42,7 +40,6 @@ document.getElementById('calculate-total-btn').addEventListener('click',function
         alert('input a valid number');
         return true;
     }
-    const totalExpenses =  playerExpenses +managerExpense +coachExpense;
+    const totalExpenses =  playerExpenses + managerExpense + coachExpense;
     setTextFieldValueById('total-expenses',totalExpenses);
-
 })
